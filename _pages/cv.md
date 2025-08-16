@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * **University of Chinese Academy of Sciences (Hangzhou Institute for Advanced Study)**  
-  *M.S. in Artificial Intelligence, Sep. 2023 – Jun. 2026*  
+  *M.S. in Artificial Intelligence, Sep. 2023 – Jun. 2026 (expected)*  
   GPA: 3.76 / 4.0  
   Selected Coursework: Natural Language Processing; Advanced AI; Multimedia Processing; Algorithm Design & Analysis  
   Research Interests: LLM-based agents; multimodal reasoning; cross-modal alignment; affective computing  
