@@ -1,6 +1,61 @@
+<!-- 
+=== 访问统计配置说明 ===
+
+本文件包含多个访问统计解决方案，可根据需要启用：
+
+1. [已启用] Busuanzi (不蒜子) - 显示总访问量和访客数
+   - 无需配置，开箱即用
+   - 数据包含全球用户
+
+2. [可选] 访问者国家统计 (ipapi) - 显示当前访问者来自的国家
+   - 取消注释即可启用
+   - 实时获取访问者地理位置
+
+3. [可选] Google Analytics - 完整分析工具
+   - 详见 _config.yml 中的 analytics 配置
+   - 提供详细的访问统计和地理位置数据
+
+4. [可选] StatCounter - 免费访问统计服务
+   - 需要在 StatCounter 官网注册
+   - 支持自定义图表和报表
+
+详见 VISITOR_STATS_GUIDE.md 中的完整配置指南
+
+===== 快速启用国家统计功能 =====
+1. 移除下方第 42 行的注释: <!-- <p id="geo-location-info"... -->
+2. 移除下方第 62-75 行的注释: <!-- Optional: Geo-location tracking -->
+3. 保存文件，刷新网页
+4. 您应该在页脚看到: 🌍 来自 [国家名称] ([国家代码])
+
+===== 更多配置 =====
+请参考 VISITOR_STATS_GUIDE.md 了解：
+- 修改显示文本和样式
+- 隐藏特定统计项
+- 启用 Google Analytics
+- 集成 StatCounter
+- 常见问题解答
+
+-->
+
 <!-- start custom footer snippets -->
 
 <a href="/sitemap/">Sitemap</a>
+
+<!-- Visitor Statistics using Busuanzi -->
+<div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; text-align: center; font-size: 0.9em; color: #666;">
+  <p>
+    <span id="busuanzi_container_site_pv">
+      📊 Total Page Views：<span id="busuanzi_value_site_pv">Loading...</span>
+    </span>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <span id="busuanzi_container_site_uv">
+      👤 Total Unique Visitors：<span id="busuanzi_value_site_uv">Loading...</span>
+    </span>
+  </p>
+  
+  <!-- Optional: Display visitor's country (uncomment to enable) -->
+  <!-- <p id="geo-location-info" style="margin-top: 10px; font-size: 0.85em; color: #999;"></p> -->
+</div>
 
 <!-- Support for MatJax -->
 <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -15,5 +70,23 @@
     mermaid.initialize({startOnLoad:true, theme:'default'});
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
+
+<!-- Busuanzi Statistics Script -->
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- Optional: Geo-location tracking using ipapi (uncomment to enable)
+<script>
+  // Fetch visitor's country information
+  fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(data => {
+      const geoInfo = document.getElementById('geo-location-info');
+      if (geoInfo) {
+        geoInfo.innerHTML = `🌍 来自 <strong>${data.country_name}</strong> (${data.country_code})`;
+      }
+    })
+    .catch(error => console.log('Geo-location fetch failed', error));
+</script>
+-->
 
 <!-- end custom footer snippets -->
