@@ -1,28 +1,5 @@
 <!-- start custom footer snippets -->
 
-<!-- Visitor Statistics Section -->
-<div id="visitor-stats-container" style="margin: 20px 0; padding: 15px; border-top: 1px solid #ddd;">
-  <div style="text-align: center; margin-bottom: 15px;">
-    <h3 style="margin: 0 0 10px 0; font-size: 0.95em; color: #666;">👥 Visitor Statistics</h3>
-  </div>
-  
-  <!-- Map Container -->
-  <div id="visitor-map" style="width: 100%; height: 300px; border-radius: 4px; margin-bottom: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-  
-  <!-- View Count Display -->
-  <div style="text-align: center; padding: 10px; background: #f5f5f5; border-radius: 4px;">
-    <span style="font-size: 0.9em; color: #666;">Total Page Views: </span>
-    <span id="visitor-count" style="font-size: 1.3em; font-weight: bold; color: #2196F3;">--</span>
-  </div>
-</div>
-
-<!-- Leaflet Map Library (CSS + JS) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-
-<!-- Visitor Statistics Script -->
-<script defer src="/assets/js/visitor-stats.js"></script>
-
 <a href="/sitemap/">Sitemap</a>
 
 <!-- Support for MatJax -->
@@ -38,5 +15,13 @@
     mermaid.initialize({startOnLoad:true, theme:'default'});
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_uv">
+    👤Total Visitors <span id="busuanzi_value_site_uv"></span> |
+    </span>
+    <span id="busuanzi_container_site_pv">
+    👁️Total Views <span id="busuanzi_value_site_pv"></span>
+    </span>
 
 <!-- end custom footer snippets -->
