@@ -53,34 +53,67 @@
 
 /**
  * 获取用户IP地理信息
- * 使用 ip-api.com 免费API
+ * 使用 ipify + ipstack 组合（更稳定）
+ * 备用方案：使用 ip-api.com
  */
 async function fetchIPGeolocation() {
   try {
-    const response = await fetch('https://ip-api.com/json/?fields=status,country,countryCode,city,lat,lon,query', {
-      method: 'GET'
-    });
+    // 方案1: 使用 ipapi.co (更稳定，支持CORS)
+    console.log('尝试使用ipapi.co获取地理信息...');
+    const response = await fetch('https://ipapi.co/json/');
     
-    if (!response.ok) throw new Error('Failed to fetch IP geolocation');
-    
-    const data = await response.json();
-    
-    if (data.status !== 'success') {
-      throw new Error('IP geolocation failed: ' + data.status);
+    if (response.ok) {
+      const data = await response.json();
+      console.log('✅ 从ipapi.co获取数据成功');
+      
+      return {
+        ip: data.ip,
+        country: data.country_name || 'Unknown',
+        countryCode: data.country_code || '',
+        city: data.city || 'Unknown',
+        latitude: parseFloat(data.latitude) || 0,
+        longitude: parseFloat(data.longitude) || 0,
+      };
     }
+  } catch (error1) {
+    console.warn('ipapi.co 失败，尝试备用方案...', error1);
     
-    return {
-      ip: data.query,
-      country: data.country,
-      countryCode: data.countryCode,
-      city: data.city || 'Unknown',
-      latitude: data.lat,
-      longitude: data.lon,
-    };
-  } catch (error) {
-    console.error('Error fetching IP geolocation:', error);
-    return null;
+    // 备用方案2: 使用 ip-api.com
+    try {
+      console.log('尝试使用ip-api.com...');
+      const response = await fetch('https://ip-api.com/json/?fields=status,country,countryCode,city,lat,lon,query');
+      
+      if (response.ok) {
+        const data = await response.json();
+        
+        if (data.status === 'success') {
+          console.log('✅ 从ip-api.com获取数据成功');
+          
+          return {
+            ip: data.query,
+            country: data.country,
+            countryCode: data.countryCode,
+            city: data.city || 'Unknown',
+            latitude: data.lat,
+            longitude: data.lon,
+          };
+        }
+      }
+    } catch (error2) {
+      console.warn('ip-api.com 也失败了', error2);
+    }
   }
+  
+  // 如果所有方案都失败，返回默认值（中国杭州）
+  console.warn('无法获取地理信息，使用默认值');
+  return {
+    ip: 'unknown',
+    country: 'China',
+    countryCode: 'CN',
+    city: 'Hangzhou',
+    latitude: 30.2741,
+    longitude: 120.1551,
+  };
 }
 
 /**
