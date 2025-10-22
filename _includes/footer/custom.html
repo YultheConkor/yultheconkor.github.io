@@ -1,5 +1,28 @@
 <!-- start custom footer snippets -->
 
+<!-- Visitor Statistics Section -->
+<div id="visitor-stats-container" style="margin: 20px 0; padding: 15px; border-top: 1px solid #ddd;">
+  <div style="text-align: center; margin-bottom: 15px;">
+    <h3 style="margin: 0 0 10px 0; font-size: 0.95em; color: #666;">👥 Visitor Statistics</h3>
+  </div>
+  
+  <!-- Map Container -->
+  <div id="visitor-map" style="width: 100%; height: 300px; border-radius: 4px; margin-bottom: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+  
+  <!-- View Count Display -->
+  <div style="text-align: center; padding: 10px; background: #f5f5f5; border-radius: 4px;">
+    <span style="font-size: 0.9em; color: #666;">Total Page Views: </span>
+    <span id="visitor-count" style="font-size: 1.3em; font-weight: bold; color: #2196F3;">--</span>
+  </div>
+</div>
+
+<!-- Leaflet Map Library (CSS + JS) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+<!-- Visitor Statistics Script -->
+<script defer src="/assets/js/visitor-stats.js"></script>
+
 <a href="/sitemap/">Sitemap</a>
 
 <!-- Support for MatJax -->
@@ -14,172 +37,6 @@
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
     mermaid.initialize({startOnLoad:true, theme:'default'});
     await mermaid.run({querySelector:'code.language-mermaid'});
-</script>
-
-<!-- 访问统计和地图 -->
-<style>
-  .visitor-stats {
-    margin-top: 30px;
-    padding: 20px;
-    background: #f5f5f5;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .visitor-stats-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  
-  .stat-item {
-    text-align: center;
-  }
-  
-  .stat-number {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 10px 0;
-  }
-  
-  .stat-label {
-    font-size: 0.9em;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  #visitor-map {
-    width: 100%;
-    height: 400px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-</style>
-
-<div class="visitor-stats">
-  <h3>Visitor Statistics</h3>
-  
-  <div class="visitor-stats-container">
-    <div class="stat-item">
-      <div class="stat-label">Total Page Views</div>
-      <div class="stat-number" id="visitor-count">Loading...</div>
-    </div>
-  </div>
-  
-  <h4>Visitor Geographic Distribution</h4>
-  <div id="visitor-map"></div>
-  <p style="font-size: 0.85em; color: #999; margin-top: 10px;">Based on IP address location statistics (for reference only)</p>
-</div>
-
-<!-- Leaflet地图库 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
-
-<script>
-// 初始化访问计数
-(function() {
-  // 使用 CountAPI 来统计访问次数
-  const countApiUrl = 'https://api.countapi.xyz/hit/yultheconkor.github.io/visits';
-  
-  fetch(countApiUrl)
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('visitor-count').textContent = data.value.toLocaleString();
-    })
-    .catch(error => {
-      console.log('Visitor count loading failed:', error);
-      document.getElementById('visitor-count').textContent = 'Loading failed';
-    });
-})();
-
-// 初始化地图
-(function() {
-  // 创建地图
-  const map = L.map('visitor-map').setView([20, 0], 2);
-  
-  // 添加地图瓦片
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors',
-    maxZoom: 19
-  }).addTo(map);
-  
-  // 获取用户IP地址和位置信息
-  fetch('https://ipapi.co/json/')
-    .then(response => response.json())
-    .then(data => {
-      const lat = data.latitude;
-      const lon = data.longitude;
-      const country = data.country_name;
-      const city = data.city;
-      
-      // 添加标记
-      L.circleMarker([lat, lon], {
-        radius: 10,
-        fillColor: '#4a90e2',
-        color: '#2c3e50',
-        weight: 2,
-        opacity: 1,
-        fillOpacity: 0.8
-      }).addTo(map)
-        .bindPopup(`<strong>Your Location</strong><br/>${city}, ${country}`);
-      
-      // 记录访问位置
-      recordVisitorLocation(lat, lon, country);
-      
-      // 地图视图
-      map.setView([lat, lon], 6);
-    })
-    .catch(error => {
-      console.log('Location information loading failed:', error);
-      // 默认显示世界地图
-      L.marker([0, 0]).addTo(map)
-        .bindPopup('Your location information cannot be obtained');
-    });
-  
-  // 添加一些主要城市作为参考点
-  const majorCities = [
-    {name: 'Beijing', lat: 39.9, lon: 116.4},
-    {name: 'Shanghai', lat: 31.2, lon: 121.5},
-    {name: 'New York', lat: 40.7, lon: -74.0},
-    {name: 'London', lat: 51.5, lon: -0.1},
-    {name: 'Tokyo', lat: 35.7, lon: 139.7},
-    {name: 'Sydney', lat: -33.9, lon: 151.2}
-  ];
-  
-  majorCities.forEach(city => {
-    L.circleMarker([city.lat, city.lon], {
-      radius: 5,
-      fillColor: '#90ee90',
-      color: '#666',
-      weight: 1,
-      opacity: 0.6,
-      fillOpacity: 0.4
-    }).addTo(map)
-      .bindPopup(`<strong>${city.name}</strong><br/>参考位置`);
-  });
-})();
-
-// 记录访问者位置（可选：存储到本地存储）
-function recordVisitorLocation(lat, lon, country) {
-  const visitKey = `visitor_${new Date().toISOString().split('T')[0]}`;
-  const visits = JSON.parse(localStorage.getItem('visits') || '{}');
-  
-  if (!visits[visitKey]) {
-    visits[visitKey] = {
-      lat: lat,
-      lon: lon,
-      country: country,
-      count: 0
-    };
-  }
-  visits[visitKey].count++;
-  
-  localStorage.setItem('visits', JSON.stringify(visits));
-}
 </script>
 
 <!-- end custom footer snippets -->
