@@ -94,7 +94,7 @@ async function fetchVisitorsData() {
     
     // 这里需要替换为实际的Gist ID
     // 建议在_config.yml中添加一个配置项
-    const gistUrl = `https://gist.github.com/YultheConkor/fb482c761a3279b3516a1df26364138a`;
+    const gistUrl = `https://gist.githubusercontent.com/YultheConkor/fb482c761a3279b3516a1df26364138a/raw/`;
     
     try {
       const response = await fetch(gistUrl);
