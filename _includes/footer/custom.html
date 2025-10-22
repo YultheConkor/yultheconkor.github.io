@@ -1,6 +1,21 @@
 <!-- start custom footer snippets -->
 
-<a href="/sitemap/">Sitemap</a>
+<!-- Leaflet地图库 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+<!-- 访问者地图容器 -->
+<div id="visitor-map-container" style="margin-bottom: 15px;">
+  <div style="display: flex; align-items: center; gap: 15px;">
+    <div>
+      <strong>👥 Visitors by Location</strong>
+      <div id="visitor-map" style="width: 265px; height: 130px; border: 1px solid #ddd; border-radius: 4px; background-color: #f0f0f0;"></div>
+      <div id="map-info" style="font-size: 12px; color: #666; margin-top: 5px; text-align: center;">
+        <span id="total-visitors">Loading...</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Support for MatJax -->
 <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -23,5 +38,8 @@
     <span id="busuanzi_container_site_pv">
     👁️Total Views <span id="busuanzi_value_site_pv"></span>
     </span>
+
+<!-- 访问者位置追踪脚本 -->
+<script src="/assets/js/visitor-tracker.js" defer></script>
 
 <!-- end custom footer snippets -->
