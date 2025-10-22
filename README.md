@@ -83,46 +83,6 @@ If you have bugfixes and enhancements that you would like to submit as a pull re
 
 Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
 
-## 🔍 访问统计功能
-
-从 2025 年 10 月开始，本网站集成了 **Busuanzi (不蒜子)** 服务来追踪访问统计。
-
-### 显示的数据
-- **📊 本站总访问量**: 所有用户的访问页面总数
-- **👤 本站访客数**: 唯一访客总数
-
-### 具体配置
-统计代码位于 `_includes/footer/custom.html`，使用 Busuanzi API：
-- 服务地址: `https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js`
-- 数据为异步加载，不会影响网站加载速度
-
-### 自定义选项
-
-#### 1. 修改样式
-编辑 `_includes/footer/custom.html` 中的 CSS 样式：
-```html
-<div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; text-align: center; font-size: 0.9em; color: #666;">
-```
-
-#### 2. 修改文本内容
-更改以下内容来自定义显示的文本：
-- `本站总访问量` - 页面访问总数标签
-- `本站访客数` - 唯一访客标签
-
-#### 3. 隐藏某个统计
-如果只想显示一项统计，删除不需要的 `<span>` 块即可。
-
-#### 4. 添加国家统计（高级）
-如需显示访问来源国家，可使用以下服务：
-- **Google Analytics**: 提供详细的地理位置数据
-- **Cloudflare Analytics**: 适合 GitHub Pages 用户
-- **StatCounter**: 免费的访问统计服务
-
-### 注意事项
-- Busuanzi 数据可能存在几分钟的延迟
-- 本地测试 (localhost) 访问不会被计入统计
-- 建议定期检查数据准确性
-
 ---
 <div align="center">
     
