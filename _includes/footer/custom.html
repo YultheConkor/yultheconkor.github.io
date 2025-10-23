@@ -4,10 +4,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
-<!-- 访问者地图容器 -->
-<div id="visitor-map-container" style="margin-bottom: 15px; display: flex; gap: 20px;">
-  <!-- 右侧地图 + 统计 -->
-  <div style="flex-shrink: 0; display: flex; flex-direction: column;">
+<!-- 统计信息容器：左侧busuanzi + 右侧访问者地图 -->
+<div id="footer-stats-container" style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 15px;">
+  <!-- 左侧：busuanzi统计 -->
+  <div id="busuanzi-stats">
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_uv">
+        👤Total Visitors <span id="busuanzi_value_site_uv"></span> |
+        </span>
+        <span id="busuanzi_container_site_pv">
+        👁️Total Views <span id="busuanzi_value_site_pv"></span>
+        </span>
+  </div>
+  
+  <!-- 右侧：访问者地图 + 统计 -->
+  <div id="visitor-map-container" style="display: flex; flex-direction: column; flex-shrink: 0; align-items: flex-end;">
     <strong style="margin-bottom: 5px;">👥 Visitors by Location</strong>
     <div id="visitor-map" style="width: 265px; height: 130px; border: 1px solid #ddd; border-radius: 4px; background-color: #f0f0f0; margin-bottom: 8px;"></div>
     <div id="map-info" style="font-size: 12px; color: #666; text-align: center;">
@@ -29,14 +40,6 @@
     mermaid.initialize({startOnLoad:true, theme:'default'});
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_uv">
-    👤Total Visitors <span id="busuanzi_value_site_uv"></span> |
-    </span>
-    <span id="busuanzi_container_site_pv">
-    👁️Total Views <span id="busuanzi_value_site_pv"></span>
-    </span>
 
 <!-- 访问者位置追踪脚本 -->
 <script src="/assets/js/visitor-tracker.js" defer></script>
