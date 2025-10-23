@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   // 只允许POST请求
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -110,7 +110,7 @@ export default async function handler(req, res) {
       error: error.message || 'Internal server error' 
     });
   }
-}
+};
 
 /**
  * 简单的IP哈希函数（保护隐私）

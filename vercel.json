@@ -1,27 +1,4 @@
 {
-  "functions": {
-    "api/track-visitor.js": {
-      "memory": 128,
-      "maxDuration": 10
-    }
-  },
   "buildCommand": "jekyll build",
-  "outputDirectory": "_site",
-  "rewrites": [
-    {
-      "source": "/api/track-visitor",
-      "destination": "/api/track-visitor.js"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/:path*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    }
-  ]
+  "outputDirectory": "_site"
 }
