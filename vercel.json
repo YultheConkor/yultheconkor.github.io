@@ -1,4 +1,9 @@
 {
   "buildCommand": "jekyll build",
-  "outputDirectory": "_site"
+  "outputDirectory": "_site",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
 }
