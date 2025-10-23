@@ -7,10 +7,21 @@
   },
   "buildCommand": "jekyll build",
   "outputDirectory": "_site",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/track-visitor",
-      "dest": "/api/track-visitor.js"
+      "source": "/api/track-visitor",
+      "destination": "/api/track-visitor.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
     }
   ]
 }
