@@ -6,5 +6,11 @@
     }
   },
   "buildCommand": "jekyll build",
-  "outputDirectory": "_site"
+  "outputDirectory": "_site",
+  "routes": [
+    {
+      "src": "/api/track-visitor",
+      "dest": "/api/track-visitor.js"
+    }
+  ]
 }
