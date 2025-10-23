@@ -2,8 +2,12 @@
 (async function() {
   try {
     // 1. 初始化地图
-    const map = L.map('visitor-map').setView([20, 0], 2);
+    const map = L.map('visitor-map').setView([20, 0], 1);
     
+    // 设置缩放限制（最小缩放到1，可以看全球）
+    map.setMinZoom(1);
+    map.setMaxZoom(19);
+
     // 添加地图瓦片
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap',

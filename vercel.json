@@ -6,10 +6,5 @@
     }
   },
   "buildCommand": "jekyll build",
-  "outputDirectory": "_site",
-  "env": {
-    "GITHUB_TOKEN": "@GITHUB_TOKEN",
-    "GIST_ID": "@GIST_ID",
-    "GITHUB_USERNAME": "@GITHUB_USERNAME"
-  }
+  "outputDirectory": "_site"
 }
