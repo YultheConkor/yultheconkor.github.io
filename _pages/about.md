@@ -12,6 +12,6 @@ My research interests include LLM-based agents, multimodal reasoning, cross-moda
 
 I am very fortunate to be advised by [Prof. Taihao Li](https://people.ucas.ac.cn/~0070909).
 
-You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Oct 22, 2025).
+You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Oct 24, 2025).
 
 [Email](mailto:liuyu233@mails.ucas.ac.cn) / [Github](https://github.com/YultheConkor) / [LinkedIn](https://www.linkedin.com/in/yu-liu-1b8004238/)
