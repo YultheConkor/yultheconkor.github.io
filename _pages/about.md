@@ -15,48 +15,66 @@ I am very fortunate to be advised by [Prof. Taihao Li](https://people.ucas.ac.cn
 You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Oct 24, 2025).
 
 [Email](mailto:liuyu233@mails.ucas.ac.cn) / [Github](https://github.com/YultheConkor) / [LinkedIn](https://www.linkedin.com/in/yu-liu-1b8004238/)
-<!-- 
+
 <section id="research-highlights">
   <h1>Research Highlights</h1>
+  <h2>Affective & Social AI</h2>
+  <p><em>Research Highlights — Core: Multimodal Empathetic Dialogue Agent</em><br>
+  <small>Role: Lead for multimodal fusion across text–audio–visual streams.</small><br>
+  <small>Agent pipeline: Perception → Dialogue Understanding → Expression</small></p>
 
-  <h2>Affective &amp; Social AI</h2>
   <ul>
     <li>
       <strong>GRACE for Multimodal Facial Emotion Recognition</strong>
-      [IEEE Transactions on Affective Computing <em>under review</em>, <a href="https://arxiv.org/abs/2507.11892" target="_blank" rel="noopener">arXiv</a>] 🌟:
-      Proposed <em>GRACE</em>, which aligns refined linguistic cues with salient facial dynamics, and performs token-level cross-modal alignment using entropy-regularized optimal transport to localize emotionally salient spatiotemporal regions—achieving new SOTA on DFEW, FERV39k, and MAFW. Within our <em>Multimodal Empathetic Dialogue Agent</em>, GRACE serves as the emotion-recognition module.
+      [IEEE Transactions on Affective Computing <em>under review</em>, 
+      <a href="https://arxiv.org/abs/2507.11892" target="_blank" rel="noopener">arXiv</a>] 🌟:
+      Introduces <em>GRACE</em> for dynamic facial emotion recognition by aligning refined linguistic cues with salient facial dynamics; achieves SOTA on DFEW, FERV39k, and MAFW.
+      <em>Agent module: instant emotion perception for the dialogue agent.</em>
     </li>
+
     <li>
       <strong>Centering Emotion Hotspots</strong>
       [under review; <a href="https://arxiv.org/abs/2510.08606" target="_blank" rel="noopener">arXiv (Oct 2025)</a>] 🌟:
-      Extends GRACE-based emotion recognition from single frames to full conversations in the <em>Multimodal Empathetic Dialogue Agent</em>, centering on multimodal “emotion hotspots.” By fusing local hotspots with dialogue-level context and tracking emotions across turns, it delivers more stable and generalizable emotion understanding for real-world dialogue.
+      Extends GRACE from frame-level signals to conversation-level tracking by centering multimodal hotspots and fusing them with dialogue context, improving stability and generalization across turns.
+      <em>Agent module: dialogue-level emotion understanding.</em>
     </li>
+
     <li>
       <strong>Think-Before-Draw</strong>
-      [Pattern Recognition <em>under review</em> · <a href="https://arxiv.org/abs/2507.12761" target="_blank" rel="noopener">arXiv</a>]:
-      A two-stage framework that first decomposes affective semantics and then guides generation, enabling disentangled, controllable talking-head synthesis with fine-grained expressions and speaker style. Designed the multimodal fusion module, integrating audio–text–visual cues to stabilize identity and sharpen affect control.
+      [Pattern Recognition <em>under review</em> · 
+      <a href="https://arxiv.org/abs/2507.12761" target="_blank" rel="noopener">arXiv</a>]:
+      A two-stage framework for disentangled, controllable talking-head synthesis. Designed the multimodal fusion module integrating audio–text–visual cues to preserve identity and sharpen affect control.
+      <em>Agent module: controllable affective expression for responses.</em>
     </li>
   </ul>
 
   <h2>Digital Therapeutics</h2>
-  <ul>
-    <li>
-      <strong>HOPE: Hierarchical Vision–Language Fusion</strong>
-      [<a href="https://doi.org/10.1145/3746027.3762063" target="_blank" rel="noopener">ACM MM ’25 Grand Challenge · DOI</a> ·
-       <a href="https://github.com/YultheConkor/HOPE" target="_blank" rel="noopener">GitHub</a>] 🌟:
-      Combines <em>visual biomarkers + LLM-augmented questionnaires</em> for low-resource depression detection; Youth track winner with <strong>94.51%</strong> (1.4% over runner-up; +49.14% over the baseline).
-    </li>
-  </ul>
+
+  <p><strong>Zhejiang Vanguard Project: Digital Therapeutics for Depression Detection</strong><br>
+  <em>Research Highlight:</em> Built a privacy- and resource-constrained depression screening framework that unifies <strong>visual biomarker extraction</strong> with <strong>questionnaire semantics</strong> via multimodal fusion—strengthening visual–text synergy in clinical-style settings. This project <strong>incubated HOPE</strong>, a hierarchical multimodal system for subject-level depression estimation.<br>
+  <em>Role:</em> Led <strong>multimodal fusion</strong> across video/audio/structured text; developed the <strong>visual biomarker extraction</strong> system for low-resource scenarios; coordinated cross-module integration to align perception with subject-level decisions.
+  </p>
+
+<ul>
+  <li>
+    <strong>HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression</strong>
+    [<a href="https://doi.org/10.1145/3746027.3762063" target="_blank" rel="noopener">ACM MM ’25 · MPDD Challenge (Young Track) · DOI</a> ·
+     <a href="https://github.com/YultheConkor/HOPE" target="_blank" rel="noopener">GitHub</a>] 🌟
+    <br>
+    <em>Research Highlight:</em> Subject-level depression detection under privacy constraints via <strong>hierarchical multimodal fusion</strong> (audio–video with personalized textual cues) and cross-task/sample <strong>consistency</strong>—<strong>1st place</strong> in the MPDD Young Track.<br>
+    <em>Role:</em> <strong>Developed the consistency-aware subject-level fusion strategy</strong>; led the writing; completed final code integration and open-source release preparation.
+  </li>
+</ul>
 
   <h2>Earlier Work: Aviation Analytics</h2>
   <ul>
     <li>
       <strong>Risk Propagation on Flight Networks</strong>
-      [<a href="https://doi.org/10.16097/j.cnki.1009-6744.2020.01.001" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> → 2023 Frontrunner 5000 Top Article]🌟:
+      [<a href="https://doi.org/10.16097/j.cnki.1009-6744.2020.01.001" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> 2023 Frontrunner 5000 Top Article]🌟:
       Introduced Spearman correlation + SIR dynamics into airline operational risk management, yielding deployable complex-network propagation analysis.
     </li>
   </ul>
-</section> -->
+</section>
 
 <section id="education">
   <h1>Education</h1>
