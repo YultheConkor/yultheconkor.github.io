@@ -63,7 +63,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <li>
     <strong>HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression</strong>
     [<a href="https://doi.org/10.1145/3746027.3762063" target="_blank" rel="noopener">ACM MM ’25 · MPDD Challenge (Young Track) · DOI</a> ·
-     <a href="https://github.com/YultheConkor/HOPE" target="_blank" rel="noopener">GitHub</a>] 🌟
+     <a href="https://github.com/YultheConkor/HOPE" target="_blank" rel="noopener">GitHub</a>] 🌟:
     <br>
     Subject-level depression detection under privacy constraints via <strong>hierarchical multimodal fusion</strong> (audio–video with personalized textual cues) and cross-task/sample <strong>consistency</strong>—<strong>1st place</strong> in the MPDD Young Track.<br>
     <em>Role:</em> <strong>Developed the consistency-aware subject-level fusion strategy</strong>; led the writing; completed final code integration and open-source release preparation.
@@ -74,7 +74,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <ul>
     <li>
       <strong>Risk Propagation on Flight Networks</strong>
-      [<a href="https://doi.org/10.16097/j.cnki.1009-6744.2020.01.001" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> 2023 Frontrunner 5000 Top Article]🌟:
+      [<a href="https://doi.org/10.16097/j.cnki.1009-6744.2020.01.001" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> 2023 Frontrunner 5000 Top Article]🌟:<br>
       Introduced Spearman correlation + SIR dynamics into airline operational risk management, yielding deployable complex-network propagation analysis.
     </li>
   </ul>
