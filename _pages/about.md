@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a second-year master's student from the [School of Intelligent Science and Technology](http://hias.ucas.ac.cn/znkxyjs/index.htm), [Hangzhou Institute for Advanced Study, UCAS](http://hias.ucas.ac.cn/).
+I am a final-year master’s candidate at the [School of Intelligent Science and Technology](http://hias.ucas.ac.cn/znkxyjs/index.htm), [Hangzhou Institute for Advanced Study, UCAS](http://hias.ucas.ac.cn/).
 
 My research interests include LLM-based agents, multimodal reasoning, cross-modal alignment, and affective computing.
 
