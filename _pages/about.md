@@ -22,11 +22,13 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <h4>Affective &amp; Social AI</h4>
   <ul>
     <li>
-      <strong>Multimodal Empathetic Dialogue Agent</strong> [arXiv ’25 / T-Affective Computing <em>under review</em>] ★:
+      <strong>Multimodal Empathetic Dialogue Agent</strong>
+      [<a href="https://arxiv.org/abs/2507.11892" target="_blank" rel="noopener">arXiv ’25</a> · IEEE Transactions on Affective Computing <em>under review</em>] ★:
       Proposed a cross-modal alignment of <em>local–global fusion + emotion hotspot centering</em>, significantly improving conversational emotion understanding and powering a controllable talking-face generation pipeline; the emotion recognizer has also been deployed as an independent fatigue-detection prototype.
     </li>
     <li>
-      <strong>Think-Before-Draw</strong> [<em>Pattern Recognition</em> <em>under review</em>]:
+      <strong>Think-Before-Draw</strong>
+      [Pattern Recognition <em>under review</em> · <a href="https://arxiv.org/abs/2507.12761" target="_blank" rel="noopener">arXiv</a>]:
       A two-stage pipeline of <em>affective semantic decomposition → generation control</em>, achieving disentanglement and controllable synthesis of fine-grained facial expressions and speaker style.
     </li>
   </ul>
@@ -34,7 +36,9 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <h4>Digital Therapeutics</h4>
   <ul>
     <li>
-      <strong>HOPE: Hierarchical Vision–Language Fusion</strong> [ACM MM ’25 Grand Challenge] ★:
+      <strong>HOPE: Hierarchical Vision–Language Fusion</strong>
+      [<a href="https://doi.org/10.1145/3746027.3762063" target="_blank" rel="noopener">ACM MM ’25 Grand Challenge · DOI</a> ·
+       <a href="https://github.com/YultheConkor/HOPE" target="_blank" rel="noopener">GitHub</a>] ★:
       Combines <em>visual biomarkers + LLM-augmented questionnaires</em> for low-resource depression detection; Youth track winner with <strong>94.51%</strong> (1.4% over runner-up; +49.14% over the baseline).
     </li>
   </ul>
@@ -42,7 +46,8 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <h4>Multimodal ERC (Emotion Recognition in Conversation)</h4>
   <ul>
     <li>
-      <strong>Centering Emotion Hotspots</strong> [<em>under review</em>]:
+      <strong>Centering Emotion Hotspots</strong>
+      [<a href="https://arxiv.org/abs/2510.08606" target="_blank" rel="noopener">under review (2026) · arXiv</a>]:
       Extends frame-level dynamics to dialogue-level cross-modal local–global fusion, improving stability and generalization for cross-turn emotion tracking.
     </li>
   </ul>
@@ -50,7 +55,8 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <h4>Earlier Work: Aviation Analytics</h4>
   <ul>
     <li>
-      <strong>Risk Propagation on Flight Networks</strong> [Journal ’20 → 2023 Frontrunner 5000 Top Article]:
+      <strong>Risk Propagation on Flight Networks</strong>
+      [<a href="https://doi.org/10.16097/j.cnki.1009-6744.2020.01.001" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> → 2023 Frontrunner 5000 Top Article]:
       Introduced Spearman correlation + SIR dynamics into airline operational risk management, yielding deployable complex-network propagation analysis.
     </li>
   </ul>
