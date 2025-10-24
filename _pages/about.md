@@ -18,7 +18,15 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
 
 <section id="research-highlights">
   <h1>Research Highlights</h1>
+  <p class="legend" aria-label="Legend">
+  <em>Legend:</em>
+  <span role="img" aria-label="Lead contribution">🌟</span> Lead contribution
+  </p>
   <h2>Affective & Social AI</h2>
+  <style>
+  .legend { margin: 4px 0 14px; font-size: 0.92rem; color: #666; }
+  .legend em { font-style: normal; font-weight: 600; margin-right: .5rem; color: #555; }
+</style>
   <p><em>Research Highlights — Core: Multimodal Empathetic Dialogue Agent</em><br>
   <small>Role: Lead for multimodal fusion across text–audio–visual streams.</small><br>
   <small>Agent pipeline: Perception → Dialogue Understanding → Expression</small></p>
