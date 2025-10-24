@@ -63,8 +63,8 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
 
   
   <p><strong>Zhejiang Vanguard Project: Digital Therapeutics for Depression Detection</strong><br>
-  <em>Research Highlight: Unified <strong>visual biomarker extraction</strong> with <strong>LLM-augmented questionnaire semantics</strong> via multimodal fusion for depression screening under privacy/low-resource constraints; <strong>incubated HOPE</strong> for subject-level estimation.</em> <br>
-  <small>Role: Led <strong>multimodal fusion</strong> (video/audio/text); built the visual-biomarker pipeline; drove cross-module integration aligned to subject-level decisions.</small>
+  <em>Research Highlight: Unified visual biomarker extraction with LLM-augmented questionnaire semantics via multimodal fusion for depression screening under privacy/low-resource constraints; <strong>incubated HOPE</strong> for subject-level estimation.</em> <br>
+  <small>Role: Led multimodal fusion (video/audio/text); built the visual-biomarker pipeline; drove cross-module integration aligned to subject-level decisions.</small>
   </p>
 
 <ul>
@@ -73,8 +73,8 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
     [<a href="https://doi.org/10.1145/3746027.3762063" target="_blank" rel="noopener">ACM MM ’25 · MPDD Challenge (Young Track) · DOI</a> ·
      <a href="https://github.com/YultheConkor/HOPE" target="_blank" rel="noopener">GitHub</a>] 🌟:
     <br>
-    Subject-level depression detection under privacy constraints via <strong>hierarchical multimodal fusion</strong> (audio–video with personalized textual cues) and cross-task/sample <strong>consistency</strong>—<strong>1st place</strong> in the MPDD Young Track.<br>
-    <em>Role:</em> <strong>Developed the consistency-aware subject-level fusion strategy</strong>; led the writing; completed final code integration and open-source release preparation.
+    Subject-level depression detection under privacy constraints via hierarchical multimodal fusion (audio–video with personalized textual cues) and cross-task/sample consistency—<strong>1st place</strong> in the MPDD Young Track.<br>
+    <em>Role:</em> Developed the consistency-aware subject-level fusion strategy; led the writing; completed final code integration and open-source release preparation.
   </li>
 </ul>
 
