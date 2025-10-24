@@ -14,7 +14,7 @@ I am very fortunate to be advised by [Prof. Taihao Li](https://people.ucas.ac.cn
 
 You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Oct 24, 2025).
 
-[Email](mailto:liuyu233@mails.ucas.ac.cn) / [Github](https://github.com/YultheConkor) / [LinkedIn](https://www.linkedin.com/in/yu-liu-1b8004238/)
+<!-- [Email](mailto:liuyu233@mails.ucas.ac.cn) / [Github](https://github.com/YultheConkor) / [LinkedIn](https://www.linkedin.com/in/yu-liu-1b8004238/) -->
 
 <section id="research-highlights">
   <h1>Research Highlights</h1>
@@ -56,7 +56,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   
   <p><strong>Zhejiang Vanguard Project: Digital Therapeutics for Depression Detection</strong><br>
   <em>Research Highlight: Unified <strong>visual biomarker extraction</strong> with <strong>LLM-augmented questionnaire semantics</strong> via multimodal fusion for depression screening under privacy/low-resource constraints; <strong>incubated HOPE</strong> for subject-level estimation.</em> <br>
-  <small>Role: Led <strong>multimodal fusion</strong> (video/audio/text); built the visual-biomarker pipeline; drove cross-module integration aligned to subject-level decisions.<small>
+  <small>Role: Led <strong>multimodal fusion</strong> (video/audio/text); built the visual-biomarker pipeline; drove cross-module integration aligned to subject-level decisions.</small>
   </p>
 
 <ul>
