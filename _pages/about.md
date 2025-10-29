@@ -8,7 +8,24 @@ redirect_from:
 ---
 I am Yu Liu (刘毓), a final-year M.S. candidate in the [School of Intelligent Science and Technology](http://hias.ucas.ac.cn/znkxyjs/index.htm), [Hangzhou Institute for Advanced Study (HIAS)](http://hias.ucas.ac.cn/), [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.edu.cn/).
 
-My research interests include LLM-based agents, multimodal reasoning, cross-modal alignment, and affective computing.
+My research interests include long-lived, human-aware multimodal agents with a robust perception→cognition→feedback loop—via temporal cross-modal alignment, long-horizon memory & reasoning, multi-agent coordination, and safe embodied interaction.
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+
+<p class="phd-banner">
+  I’m currently seeking PhD positions (Fall 2026 start) aligned with the focus above; I’m happy to connect regarding well-matched openings.
+</p>
+
+<style>
+/* 仅影响这条声明，不改变全站样式 */
+.phd-banner{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;           /* 比正文略重，易扫读 */
+  letter-spacing: 0.1px;      /* 轻微字距，提升可读性 */
+  margin: 0.4rem 0 0.2rem;    /* 与前后段落留点呼吸感 */
+}
+</style>
 
 I am very fortunate to be advised by [Prof. Taihao Li](https://people.ucas.ac.cn/~0070909) and [Dr. Leyuan Qu](https://people.ucas.edu.cn/~leyuanqu).
 
