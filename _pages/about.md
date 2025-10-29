@@ -8,7 +8,7 @@ redirect_from:
 ---
 I am Yu Liu (刘毓), a final-year M.S. candidate in the [School of Intelligent Science and Technology](http://hias.ucas.ac.cn/znkxyjs/index.htm), [Hangzhou Institute for Advanced Study (HIAS)](http://hias.ucas.ac.cn/), [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.edu.cn/).
 
-My research interests include long-lived, human-aware multimodal agents with a robust perception→cognition→feedback loop—via temporal cross-modal alignment, long-horizon memory & reasoning, multi-agent coordination, and safe embodied interaction.
+My research interests include long-lived, human-aware multimodal agents with a robust perception→cognition→feedback loop—via multimodal affective computing, cross-modal alignment, long-horizon memory & reasoning, multi-agent coordination, and safe embodied interaction.
 
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
