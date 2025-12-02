@@ -29,7 +29,7 @@ My research interests include long-lived, human-aware multimodal agents with a r
 
 I am very fortunate to be advised by [Prof. Taihao Li](https://people.ucas.ac.cn/~0070909) and [Dr. Leyuan Qu](https://people.ucas.edu.cn/~leyuanqu).
 
-You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Oct 24, 2025).
+You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Dec 2, 2025).
 
 <!-- [Email](mailto:liuyu233@mails.ucas.ac.cn) / [Github](https://github.com/YultheConkor) / [LinkedIn](https://www.linkedin.com/in/yu-liu-1b8004238/) -->
 
@@ -99,7 +99,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <ul>
     <li>
       <strong>Risk Propagation on Flight Networks</strong>
-      [<a href="https://doi.org/10.16097/j.cnki.1009-6744.2020.01.001" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> 2023 Frontrunner 5000 Top Article]🌟:<br>
+      [<a href="http://www.tseit.org.cn/CN/Y2020/V20/I1/198" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> 2023 Frontrunner 5000 Top Article]🌟:<br>
       Introduced Spearman correlation + SIR dynamics into airline operational risk management, yielding deployable complex-network propagation analysis.
     </li>
   </ul>
