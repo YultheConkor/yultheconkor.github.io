@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am Yu Liu (刘毓), a final-year M.S. candidate in the [School of Intelligent Science and Technology](http://hias.ucas.ac.cn/znkxyjs/index.htm), [Hangzhou Institute for Advanced Study (HIAS)](http://hias.ucas.ac.cn/), [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.edu.cn/).
+Hi, I am Yu Liu (刘毓, pronunciation: Yoo Lee-oh), a final-year M.S. candidate in Artificial Intelligence at the [School of Intelligent Science and Technology](http://hias.ucas.ac.cn/znkxyjs/index.htm), [Hangzhou Institute for Advanced Study (HIAS)](http://hias.ucas.ac.cn/), [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.edu.cn/).
 
 My research interests include long-lived, human-aware multimodal agents with a robust perception→cognition→feedback loop—via multimodal affective computing, cross-modal alignment, long-horizon memory & reasoning, multi-agent coordination, and safe embodied interaction.
 
