@@ -60,7 +60,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
 
     <li>
       <strong>Centering Emotion Hotspots</strong>
-      [under review; <a href="https://arxiv.org/abs/2510.08606" target="_blank" rel="noopener">arXiv (Oct 2025)</a>] 🌟:
+      [under review; <a href="https://arxiv.org/abs/2510.08606" target="_blank" rel="noopener">arXiv</a>] 🌟:
       <br>
       Extends GRACE from frame-level signals to conversation-level tracking by centering multimodal hotspots and fusing them with dialogue context, improving stability and generalization across turns.
       <em>Agent module: dialogue-level emotion understanding.</em>
@@ -87,8 +87,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
 <ul>
   <li>
     <strong>HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression</strong>
-    [<a href="https://doi.org/10.1145/3746027.3762063" target="_blank" rel="noopener">ACM MM ’25 · MPDD Challenge (Young Track) · DOI</a> ·
-     <a href="https://github.com/YultheConkor/HOPE" target="_blank" rel="noopener">GitHub</a>] 🌟:
+    [<a href="https://doi.org/10.1145/3746027.3762063" target="_blank" rel="noopener">ACM MM'25</a>] 🌟:
     <br>
     Subject-level depression detection under privacy constraints via hierarchical multimodal fusion (audio–video with personalized textual cues) and cross-task/sample consistency—<strong>1st place</strong> in the MPDD Young Track.<br>
     <em>Role:</em> Developed the consistency-aware subject-level fusion strategy; led the writing; completed final code integration and open-source release preparation.
