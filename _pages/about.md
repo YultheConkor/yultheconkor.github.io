@@ -13,9 +13,9 @@ My research interests include long-lived, human-aware multimodal agents with a r
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
 
-<p class="phd-banner">
+<!-- <p class="phd-banner">
   I’m currently seeking PhD positions (Fall 2026 start) aligned with the focus above; I’m happy to connect regarding well-matched openings.
-</p>
+</p> -->
 
 <style>
 /* 仅影响这条声明，不改变全站样式 */
@@ -29,7 +29,7 @@ My research interests include long-lived, human-aware multimodal agents with a r
 
 I am very fortunate to be supervised by [Prof. Taihao Li](https://people.ucas.ac.cn/~0070909) and [Dr. Leyuan Qu](https://people.ucas.edu.cn/~leyuanqu). I also greatly enjoy collaborating with [Haoxun Li](https://wd-233.github.io/) and Hanlei Shi—I truly value our inspirational discussions and seamless teamwork.
 
-You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Feb 6, 2026).
+You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Mar 18, 2026).
 
 <!-- [Email](mailto:liuyu233@mails.ucas.ac.cn) / [Github](https://github.com/YultheConkor) / [LinkedIn](https://www.linkedin.com/in/yu-liu-1b8004238/) -->
 
@@ -73,6 +73,14 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
       <br>
       A two-stage framework for disentangled, controllable talking-head synthesis. Designed the multimodal fusion module integrating audio–text–visual cues to preserve identity and sharpen affect control.
       <em>Agent module: controllable affective expression for responses.</em>
+    </li>
+
+    <li>
+      <strong>HyDRA</strong>
+      [under review; <a href="hhttps://arxiv.org/abs/2603.16463" target="_blank" rel="noopener">arXiv</a>] 🌟:
+      <br>
+      Proposes <em>HyDRA</em>, a Hybrid-evidential Deductive Reasoning Architecture for open-vocabulary multimodal emotion recognition that formalizes inference as a Propose–Verify–Decide protocol; employs RL with hierarchical reward shaping to internalize abductive reasoning, consistently outperforming strong baselines—especially under ambiguous or conflicting cues—while yielding interpretable evidence traces.
+      <em>Agent module: open-vocabulary emotion reasoning under real-world ambiguity—serves as the core multimodal affective understanding backbone for the dialogue agent.</em>
     </li>
   </ul>
 
