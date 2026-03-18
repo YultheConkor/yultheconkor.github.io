@@ -105,8 +105,8 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
   <h2>Earlier Work: Aviation Analytics</h2>
   <ul>
     <li>
-      <strong>Risk Propagation on Flight Networks</strong>
-      [<a href="http://www.tseit.org.cn/CN/Y2020/V20/I1/198" target="_blank" rel="noopener">Journal of Transportation Systems Engineering (2020) · DOI</a> 2023 Frontrunner 5000 Top Article]🌟:<br>
+      <strong>Flight Operation Risk Propagation Based on Complex Network</strong>
+      [<a href="http://www.tseit.org.cn/CN/Y2020/V20/I1/198" target="_blank" rel="noopener">Journal of Transportation Systems Engineering</a> 2023 Frontrunner 5000 Top Article]🌟:<br>
       Introduced Spearman correlation + SIR dynamics into airline operational risk management, yielding deployable complex-network propagation analysis.
     </li>
   </ul>
