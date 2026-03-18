@@ -77,7 +77,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
 
     <li>
       <strong>HyDRA</strong>
-      [under review; <a href="hhttps://arxiv.org/abs/2603.16463" target="_blank" rel="noopener">arXiv</a>] 🌟:
+      [under review; <a href="https://arxiv.org/abs/2603.16463" target="_blank" rel="noopener">arXiv</a>] 🌟:
       <br>
       Proposes <em>HyDRA</em>, a Hybrid-evidential Deductive Reasoning Architecture for open-vocabulary multimodal emotion recognition that formalizes inference as a Propose–Verify–Decide protocol; employs RL with hierarchical reward shaping to internalize abductive reasoning, consistently outperforming strong baselines—especially under ambiguous or conflicting cues—while yielding interpretable evidence traces.
       <em>Agent module: open-vocabulary emotion reasoning under real-world ambiguity—serves as the core multimodal affective understanding backbone for the dialogue agent.</em>
