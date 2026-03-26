@@ -29,7 +29,7 @@ My research interests include long-lived, human-aware multimodal agents with a r
 
 I am very fortunate to be supervised by [Prof. Taihao Li](https://people.ucas.ac.cn/~0070909) and [Dr. Leyuan Qu](https://people.ucas.edu.cn/~leyuanqu). I also greatly enjoy collaborating with [Haoxun Li](https://wd-233.github.io/) and Hanlei Shi—I truly value our inspirational discussions and seamless teamwork.
 
-You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Mar 18, 2026).
+You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (Updated: Mar 26, 2026).
 
 <!-- [Email](mailto:liuyu233@mails.ucas.ac.cn) / [Github](https://github.com/YultheConkor) / [LinkedIn](https://www.linkedin.com/in/yu-liu-1b8004238/) -->
 
