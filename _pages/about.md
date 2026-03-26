@@ -68,8 +68,7 @@ You can find my CV here: [Yu Liu's Curriculum Vitae](../assets/Yu_Liu_CV.pdf) (U
 
     <li>
       <strong>Think-Before-Draw</strong>
-      [Pattern Recognition
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320326005595" target="_blank" rel="noopener">ScienceDirect</a>]:
+      [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320326005595" target="_blank" rel="noopener">Pattern Recognition</a>]:
       <br>
       A two-stage framework for disentangled, controllable talking-head synthesis. Designed the multimodal fusion module integrating audio–text–visual cues to preserve identity and sharpen affect control.
       <em>Agent module: controllable affective expression for responses.</em>
