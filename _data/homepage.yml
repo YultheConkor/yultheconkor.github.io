@@ -116,6 +116,7 @@ publications:
           url: "https://doi.org/10.1145/3746027.3762063"
 
     - title: "EMORL-TTS: Reinforcement Learning for Fine-Grained Emotion Control in LLM-based TTS"
+      image: "/images/papers/EMORL-TTS.png"
       badges:
         - text: "ICASSP'26"
       authors: "Haoxun Li, <strong>Yu Liu</strong>, Yuqing Sun, Hanlei Shi, Leyuan Qu, Taihao Li"
