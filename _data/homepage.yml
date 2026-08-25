@@ -115,6 +115,20 @@ publications:
         - label: Paper
           url: "https://doi.org/10.1145/3746027.3762063"
 
+    - title: "EMORL-TTS: Reinforcement Learning for Fine-Grained Emotion Control in LLM-based TTS"
+      badges:
+        - text: "ICASSP'26"
+      authors: "Haoxun Li, <strong>Yu Liu</strong>, Yuqing Sun, Hanlei Shi, Leyuan Qu, Taihao Li"
+      summary: >-
+        Unifies global VAD intensity control with local emphasis regulation in LLM-based TTS
+        through supervised fine-tuning and reinforcement learning, improving emotional accuracy
+        and intensity differentiation without sacrificing synthesis quality.
+      links:
+        - label: Paper
+          url: "https://ieeexplore.ieee.org/document/11460999"
+        - label: arXiv
+          url: "https://arxiv.org/abs/2510.05758"
+
     - title: "Think-Before-Draw: Decomposing Emotion Semantics & Fine-Grained Controllable Expressive Talking Head Generation"
       image: "/images/papers/Think-Before-Draw.png"
       badges:
