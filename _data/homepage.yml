@@ -107,7 +107,7 @@ publications:
         - text: "ACM MM'25"
         - text: "1st Place · MPDD"
           soft: true
-      authors: "Hanlei Shi*, <strong>Yu Liu*</strong>, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
+      authors: "Hanlei Shi*, <strong>Yu Liu*</strong>, Haoxun Li*, Yuxuan Ding*, Leyuan Qu, Taihao Li"
       summary: >-
         Subject-level depression detection under privacy constraints via hierarchical audio&ndash;video
         fusion with personalized textual cues and cross-task consistency.
