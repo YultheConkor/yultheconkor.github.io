@@ -55,18 +55,14 @@ profile:
       url: "/assets/Yu_Liu_CV.pdf"
 
 news:
+  - date: "2026.08"
+    text: "From Coarse to Nuanced was accepted to IEEE TAFFC."
+  - date: "2026.05"
+    text: "Awarded Outstanding Graduate of UCAS."
+  - date: "2026.05"
+    text: "Awarded Outstanding Master's Thesis of HIAS, UCAS."
   - date: "2026.03"
-    text: "HyDRA was available as a preprint on arXiv."
-  - date: "2026.01"
     text: "Think-Before-Draw was accepted to Pattern Recognition."
-  - date: "2025.10"
-    text: "Centering Emotion Hotspots was available as a preprint on arXiv."
-  - date: "2025.08"
-    text: "HOPE was accepted to ACM MM 2025, and won 1st place in the MPDD Challenge Young Track."
-  - date: "2025.07"
-    text: "GRACE was available as a preprint on arXiv."
-  - date: "2023.09"
-    text: "Started my M.S. in Artificial Intelligence at HIAS, UCAS."
 
 research:
   - title: "Multimodal Affective Computing"
@@ -85,6 +81,47 @@ research:
 publications:
   note: "* equal contribution"
   items:
+    # Published work first (most recent first), then work under review.
+    # Add an optional `image: "/images/papers/<file>.png"` to any entry to show a thumbnail.
+    - title: "From Coarse to Nuanced: Cross-Modal Alignment of Fine-Grained Linguistic Cues and Visual Salient Regions for Dynamic Emotion Recognition"
+      badges:
+        - text: "IEEE TAFFC"
+      authors: "<strong>Yu Liu</strong>, Leyuan Qu, Hanlei Shi, Di Gao, Yuhua Zheng, Taihao Li"
+      summary: >-
+        Introduces GRACE for dynamic facial emotion recognition by aligning refined linguistic cues
+        with salient facial dynamics, achieving state of the art on DFEW, FERV39k and MAFW.
+      links:
+        - label: Paper
+          url: "https://ieeexplore.ieee.org/abstract/document/11651356"
+        - label: arXiv
+          url: "https://arxiv.org/abs/2507.11892"
+
+    - title: "Think-Before-Draw: Decomposing Emotion Semantics & Fine-Grained Controllable Expressive Talking Head Generation"
+      badges:
+        - text: "Pattern Recognition"
+      authors: "Hanlei Shi, Leyuan Qu, <strong>Yu Liu</strong>, Di Gao, Yuhua Zheng, Taihao Li"
+      summary: >-
+        A two-stage framework for disentangled, controllable talking-head synthesis; I designed the
+        multimodal fusion module that preserves identity while sharpening affect control.
+      links:
+        - label: Paper
+          url: "https://www.sciencedirect.com/science/article/abs/pii/S0031320326005595"
+        - label: arXiv
+          url: "https://arxiv.org/abs/2507.12761"
+
+    - title: "HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression"
+      badges:
+        - text: "ACM MM'25"
+        - text: "1st Place · MPDD"
+          soft: true
+      authors: "Hanlei Shi*, <strong>Yu Liu*</strong>, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
+      summary: >-
+        Subject-level depression detection under privacy constraints via hierarchical audio&ndash;video
+        fusion with personalized textual cues and cross-task consistency.
+      links:
+        - label: Paper
+          url: "https://doi.org/10.1145/3746027.3762063"
+
     - title: "Follow the Clues, Frame the Truth: Hybrid-evidential Deductive Reasoning in Open-Vocabulary Multimodal Emotion Recognition"
       badges:
         - text: "Under Review"
@@ -107,58 +144,6 @@ publications:
       links:
         - label: arXiv
           url: "https://arxiv.org/abs/2510.08606"
-
-    - title: "From Coarse to Nuanced: Cross-Modal Alignment of Fine-Grained Linguistic Cues and Visual Salient Regions for Dynamic Emotion Recognition"
-      badges:
-        - text: "IEEE TAFFC"
-        - text: "Under Review"
-          soft: true
-      authors: "<strong>Yu Liu</strong>, Leyuan Qu, Hanlei Shi, Di Gao, Yuhua Zheng, Taihao Li"
-      summary: >-
-        Introduces GRACE for dynamic facial emotion recognition by aligning refined linguistic cues
-        with salient facial dynamics, achieving state of the art on DFEW, FERV39k and MAFW.
-      links:
-        - label: arXiv
-          url: "https://arxiv.org/abs/2507.11892"
-
-    - title: "HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression"
-      badges:
-        - text: "ACM MM'25"
-        - text: "1st Place · MPDD"
-          soft: true
-      authors: "Hanlei Shi*, <strong>Yu Liu*</strong>, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
-      summary: >-
-        Subject-level depression detection under privacy constraints via hierarchical audio&ndash;video
-        fusion with personalized textual cues and cross-task consistency.
-      links:
-        - label: Paper
-          url: "https://doi.org/10.1145/3746027.3762063"
-
-    - title: "Think-Before-Draw: Decomposing Emotion Semantics & Fine-Grained Controllable Expressive Talking Head Generation"
-      badges:
-        - text: "Pattern Recognition"
-      authors: "Hanlei Shi, Leyuan Qu, <strong>Yu Liu</strong>, Di Gao, Yuhua Zheng, Taihao Li"
-      summary: >-
-        A two-stage framework for disentangled, controllable talking-head synthesis; I designed the
-        multimodal fusion module that preserves identity while sharpening affect control.
-      links:
-        - label: Paper
-          url: "https://www.sciencedirect.com/science/article/abs/pii/S0031320326005595"
-        - label: arXiv
-          url: "https://arxiv.org/abs/2507.12761"
-
-    - title: "Flight Operation Risk Propagation Based on Complex Network"
-      badges:
-        - text: "J. Transp. Sys. Eng."
-        - text: "F5000 Top Article"
-          soft: true
-      authors: "<strong>Yu Liu</strong>, et al."
-      summary: >-
-        Brings Spearman correlation and SIR dynamics into airline operational risk management,
-        yielding a deployable complex-network propagation analysis.
-      links:
-        - label: Paper
-          url: "http://www.tseit.org.cn/CN/Y2020/V20/I1/198"
 
 experience:
   - org: "China Southern Airlines"

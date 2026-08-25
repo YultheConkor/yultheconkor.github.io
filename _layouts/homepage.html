@@ -95,6 +95,11 @@
           <div class="publication-list">
             {% for paper in hp.publications.items %}
             <article class="publication-card">
+              {% if paper.image %}
+              <div class="publication-image">
+                <img src="{{ base_path }}{{ paper.image }}" alt="{{ paper.title | strip_html | truncate: 60 }} thumbnail" loading="lazy">
+              </div>
+              {% endif %}
               <div class="publication-body">
                 <div class="title-row">
                   <h3>{{ paper.title }}</h3>
