@@ -101,6 +101,20 @@ publications:
         - label: arXiv
           url: "https://arxiv.org/abs/2507.11892"
 
+    - title: "HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression"
+      image: "/images/papers/HOPE.jpg"
+      badges:
+        - text: "ACM MM'25"
+        - text: "1st Place · MPDD"
+          soft: true
+      authors: "Hanlei Shi*, <strong>Yu Liu*</strong>, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
+      summary: >-
+        Subject-level depression detection under privacy constraints via hierarchical audio&ndash;video
+        fusion with personalized textual cues and cross-task consistency.
+      links:
+        - label: Paper
+          url: "https://doi.org/10.1145/3746027.3762063"
+
     - title: "Think-Before-Draw: Decomposing Emotion Semantics & Fine-Grained Controllable Expressive Talking Head Generation"
       image: "/images/papers/Think-Before-Draw.png"
       badges:
@@ -115,19 +129,7 @@ publications:
         - label: arXiv
           url: "https://arxiv.org/abs/2507.12761"
 
-    - title: "HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression"
-      image: "/images/papers/HOPE.jpg"
-      badges:
-        - text: "ACM MM'25"
-        - text: "1st Place · MPDD"
-          soft: true
-      authors: "Hanlei Shi*, <strong>Yu Liu*</strong>, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
-      summary: >-
-        Subject-level depression detection under privacy constraints via hierarchical audio&ndash;video
-        fusion with personalized textual cues and cross-task consistency.
-      links:
-        - label: Paper
-          url: "https://doi.org/10.1145/3746027.3762063"
+    
 
     - title: "Follow the Clues, Frame the Truth: Hybrid-evidential Deductive Reasoning in Open-Vocabulary Multimodal Emotion Recognition"
       image: "/images/papers/hydra.png"
