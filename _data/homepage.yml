@@ -22,20 +22,22 @@ nav:
 
 profile:
   name: "Yu Liu"
-  position: "M.S. in Artificial Intelligence &middot; School of Intelligent Science and Technology, HIAS, UCAS"
+  position: "ELLIS PhD Student &middot; CMVS, University of Oulu &amp; ELLIS Institute Finland"
   avatar: "/images/yultheconkor_avatar.png"
   paragraphs:
     - >-
-      I am a final-year M.S. candidate in Artificial Intelligence at the
-      <a href="http://hias.ucas.ac.cn/znkxyjs/index.htm">School of Intelligent Science and Technology</a>,
-      <a href="http://hias.ucas.ac.cn/">Hangzhou Institute for Advanced Study (HIAS)</a>,
-      <a href="https://www.ucas.edu.cn/">University of Chinese Academy of Sciences (UCAS)</a>,
-      advised by <a href="https://people.ucas.ac.cn/~0070909">Prof. Taihao Li</a> and
-      <a href="https://people.ucas.edu.cn/~leyuanqu">Dr. Leyuan Qu</a>.
+      I am an ELLIS PhD student jointly affiliated with the
+      <a href="https://www.oulu.fi/en/university/faculties-and-units/faculty-information-technology-and-electrical-engineering/center-for-machine-vision-and-signal-analysis">Center for Machine Vision and Signal Analysis (CMVS)</a>,
+      <a href="https://www.oulu.fi/en">University of Oulu</a>, and the
+      <a href="https://www.ellisinstitute.fi/">ELLIS Institute Finland</a>. I am advised by
+      <a href="https://gyzhao-nm.github.io/Guoying/">Prof. Guoying Zhao</a>, with
+      <a href="https://www.cs.helsinki.fi/u/ahonkela/">Prof. Antti Honkela</a> as my co-supervisor and
+      <a href="http://www.schuller.one/">Prof. Bj&ouml;rn Schuller</a> as my co-advisor within the
+      ELLIS PhD Program.
     - >-
-      My research centers on <strong>multimodal affective computing</strong> and
-      <strong>long-lived, human-aware multimodal agents</strong> with a robust
-      perception &rarr; cognition &rarr; feedback loop. If you are interested in collaborating,
+      My doctoral research develops <strong>privacy-aware multimodal affect understanding</strong>
+      with <strong>multimodal large language models</strong>, tracing every affective interpretation
+      back to the audio, video and text evidence it rests on. If you are interested in collaborating,
       feel free to reach out via email.
   links:
     - id: email
@@ -67,16 +69,14 @@ news:
 research:
   - title: "Multimodal Affective Computing"
     text: >-
-      From frame-level facial dynamics to conversation-level tracking and open-vocabulary
-      emotional reasoning, following a Perception &rarr; Dialogue Understanding &rarr; Expression pipeline.
-  - title: "Human-aware Multimodal Agents"
+      Reading affect from faces, voices and language, from single frames to whole conversations.
+  - title: "Multimodal Large Language Models"
     text: >-
-      Cross-modal alignment, long-horizon memory and reasoning, multi-agent coordination,
-      and safe embodied interaction for agents that stay coherent over time.
-  - title: "Digital Therapeutics"
+      Making perception, reasoning and adaptation more reliable when the evidence spans
+      audio, video and text.
+  - title: "Privacy-Aware Multimodal Learning"
     text: >-
-      Mental-health screening under privacy and low-resource constraints, combining visual
-      biomarkers with LLM-augmented questionnaire semantics.
+      Protecting the people behind the data, and understanding what that protection costs.
 
 publications:
   note: "* equal contribution"
@@ -158,7 +158,7 @@ experience:
         <strong>roughly 85%</strong> in support of operational safety and decision-making.
   - org: "Hangzhou Institute for Advanced Study, UCAS"
     role: "Lab Coordinator & Administrator"
-    period: "2024.09 - Present"
+    period: "2024.09 - 2026.06"
     points:
       - >-
         Manage onboarding, event organization and <strong>GPU resource</strong> scheduling; oversee equipment
@@ -177,7 +177,7 @@ education:
 
 acknowledgements:
   - >-
-    I am very fortunate to be supervised by
+    During my master's studies at HIAS, UCAS, I was very fortunate to be supervised by
     <a href="https://people.ucas.ac.cn/~0070909">Prof. Taihao Li</a> and
     <a href="https://people.ucas.edu.cn/~leyuanqu">Dr. Leyuan Qu</a>, whose guidance has shaped
     how I think about research.
