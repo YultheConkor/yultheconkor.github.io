@@ -107,7 +107,7 @@
                   <span class="venue-badge{% if badge.soft %} badge-soft{% endif %}">{{ badge.text }}</span>
                   {% endfor %}
                 </div>
-                <p>{{ paper.authors }}</p>
+                <p class="publication-authors">{{ paper.authors }}</p>
                 {% if paper.summary %}<p class="publication-summary">{{ paper.summary }}</p>{% endif %}
                 {% if paper.links %}
                 <div class="paper-links">
@@ -150,7 +150,9 @@
           <h2 class="section-title">Academic Service</h2>
           <div class="simple-card">
             <ul class="service-list">
-              {% for item in hp.service %}<li>{{ item }}</li>{% endfor %}
+              {% comment %}The wrapping span keeps the list item a single flex child,
+              so inline markup inside the text does not lose its surrounding spaces.{% endcomment %}
+              {% for item in hp.service %}<li><span>{{ item }}</span></li>{% endfor %}
             </ul>
           </div>
         </div>
@@ -188,6 +190,12 @@
     </main>
 
     <footer class="site-footer">
+      {% if hp.visitors.counter %}
+      <p class="visitor-stats">
+        <span id="busuanzi_container_site_pv">Total views <span id="busuanzi_value_site_pv">&middot;&middot;&middot;</span></span>
+      </p>
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      {% endif %}
       <p>{{ hp.footer }}</p>
     </footer>
 

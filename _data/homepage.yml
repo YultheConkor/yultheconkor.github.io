@@ -29,13 +29,17 @@ profile:
       I am an ELLIS PhD student jointly affiliated with the
       <a href="https://www.oulu.fi/en/university/faculties-and-units/faculty-information-technology-and-electrical-engineering/center-for-machine-vision-and-signal-analysis">Center for Machine Vision and Signal Analysis (CMVS)</a>,
       <a href="https://www.oulu.fi/en">University of Oulu</a>, and the
-      <a href="https://www.ellisinstitute.fi/">ELLIS Institute Finland</a>. I am advised by
-      <a href="https://gyzhao-nm.github.io/Guoying/">Prof. Guoying Zhao</a>, with
-      <a href="https://www.cs.helsinki.fi/u/ahonkela/">Prof. Antti Honkela</a> as my co-supervisor and
-      <a href="http://www.schuller.one/">Prof. Bj&ouml;rn Schuller</a> as my co-advisor within the
-      ELLIS PhD Program.
+      <a href="https://www.ellisinstitute.fi/">ELLIS Institute Finland</a>. I am supervised by
+      <a href="https://gyzhao-nm.github.io/Guoying/">Prof. Guoying Zhao</a>, and co-supervised by
+      <a href="https://www.cs.helsinki.fi/u/ahonkela/">Prof. Antti Honkela</a> at the ELLIS Institute Finland
+      and <a href="http://www.schuller.one/">Prof. Bj&ouml;rn Schuller</a> within the ELLIS PhD Program.
+      I received my M.S. in Artificial Intelligence from the
+      <a href="http://hias.ucas.ac.cn/">Hangzhou Institute for Advanced Study</a>,
+      <a href="https://www.ucas.edu.cn/">University of Chinese Academy of Sciences</a>, in 2026,
+      supervised by <a href="https://people.ucas.ac.cn/~0070909">Prof. Taihao Li</a> and
+      <a href="https://people.ucas.edu.cn/~leyuanqu">Dr. Leyuan Qu</a>.
     - >-
-      My doctoral research develops <strong>privacy-aware multimodal affect understanding</strong>
+      My research mainly focuses on <strong>privacy-aware multimodal affect understanding</strong>
       with <strong>multimodal large language models</strong>, tracing every affective interpretation
       back to the audio, video and text evidence it rests on. If you are interested in collaborating,
       feel free to reach out via email.
@@ -84,6 +88,7 @@ publications:
     # Published work first (most recent first), then work under review.
     # Add an optional `image: "/images/papers/<file>.png"` to any entry to show a thumbnail.
     - title: "From Coarse to Nuanced: Cross-Modal Alignment of Fine-Grained Linguistic Cues and Visual Salient Regions for Dynamic Emotion Recognition"
+      image: "/images/papers/grace.png"
       badges:
         - text: "IEEE TAFFC"
       authors: "<strong>Yu Liu</strong>, Leyuan Qu, Hanlei Shi, Di Gao, Yuhua Zheng, Taihao Li"
@@ -97,6 +102,7 @@ publications:
           url: "https://arxiv.org/abs/2507.11892"
 
     - title: "Think-Before-Draw: Decomposing Emotion Semantics & Fine-Grained Controllable Expressive Talking Head Generation"
+      image: "/images/papers/Think-Before-Draw.png"
       badges:
         - text: "Pattern Recognition"
       authors: "Hanlei Shi, Leyuan Qu, <strong>Yu Liu</strong>, Di Gao, Yuhua Zheng, Taihao Li"
@@ -110,6 +116,7 @@ publications:
           url: "https://arxiv.org/abs/2507.12761"
 
     - title: "HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression"
+      image: "/images/papers/HOPE.jpg"
       badges:
         - text: "ACM MM'25"
         - text: "1st Place · MPDD"
@@ -123,6 +130,7 @@ publications:
           url: "https://doi.org/10.1145/3746027.3762063"
 
     - title: "Follow the Clues, Frame the Truth: Hybrid-evidential Deductive Reasoning in Open-Vocabulary Multimodal Emotion Recognition"
+      image: "/images/papers/hydra.png"
       badges:
         - text: "Under Review"
       authors: "<strong>Yu Liu</strong>, Lei Zhang, Haoxun Li, Hanlei Shi, Yuxuan Ding, Leyuan Qu, Taihao Li"
@@ -135,6 +143,7 @@ publications:
           url: "https://arxiv.org/abs/2603.16463"
 
     - title: "Centering Emotion Hotspots: Multimodal Local-Global Fusion and Cross-Modal Alignment for Emotion Recognition in Conversations"
+      image: "/images/papers/Emotion-Hotspots.png"
       badges:
         - text: "Under Review"
       authors: "<strong>Yu Liu</strong>, Hanlei Shi, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
@@ -165,14 +174,15 @@ experience:
         procurement and reimbursement workflows to keep projects moving.
 
 service:
+  - "<strong>Journal Reviewer</strong> for <em>IEEE Transactions on Affective Computing</em>, 2026 - present."
   - "<strong>Journal Reviewer</strong> for <em>Pattern Recognition</em> (Elsevier), 2025 - present."
 
 education:
   - school: "University of Chinese Academy of Sciences"
-    degree: "M.S. in Artificial Intelligence, Hangzhou Institute for Advanced Study (GPA 3.76/4.00)"
+    degree: "M.S. in Artificial Intelligence, Hangzhou Institute for Advanced Study"
     period: "2023.09 - 2026.06"
   - school: "Civil Aviation University of China"
-    degree: "B.S. in Transportation (GPA 3.36/4.00)"
+    degree: "B.S. in Transportation"
     period: "2015.09 - 2019.06"
 
 acknowledgements:
@@ -185,5 +195,9 @@ acknowledgements:
     I also greatly enjoy collaborating with
     <a href="https://wd-233.github.io/">Haoxun Li</a> and Hanlei Shi &mdash; I truly value our
     inspirational discussions and seamless teamwork.
+
+# Site-wide view counter shown above the footer line. Set to false to hide it.
+visitors:
+  counter: true
 
 footer: "Last updated at 2026.08.25 &middot; Thanks for coming!"

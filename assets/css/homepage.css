@@ -577,6 +577,14 @@ main {
   color: var(--muted);
 }
 
+.publication-authors strong {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 24, 27, 0.32);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
 .venue-badge {
   display: inline-flex;
   align-items: center;
@@ -708,6 +716,11 @@ main {
 .site-footer p {
   margin: 0;
   font-size: 12px;
+}
+
+.site-footer .visitor-stats {
+  margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ---------- Responsive ---------- */
