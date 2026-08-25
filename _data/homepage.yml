@@ -21,7 +21,7 @@ nav:
     title: Acknowledgements
 
 profile:
-  name: "Yu Liu"
+  name: "Yu Liu (刘毓)"
   position: "ELLIS PhD Student &middot; CMVS, University of Oulu &amp; ELLIS Institute Finland"
   avatar: "/images/yultheconkor_avatar.png"
   paragraphs:
@@ -62,7 +62,7 @@ profile:
 
 news:
   - date: "2026.08"
-    text: "From Coarse to Nuanced was accepted to IEEE TAFFC."
+    text: "From Coarse to Nuanced was accepted to IEEE Transactions on Affective Computing."
   - date: "2026.05"
     text: "Awarded Outstanding Graduate of UCAS."
   - date: "2026.05"
@@ -90,7 +90,7 @@ publications:
     - title: "From Coarse to Nuanced: Cross-Modal Alignment of Fine-Grained Linguistic Cues and Visual Salient Regions for Dynamic Emotion Recognition"
       image: "/images/papers/grace.png"
       badges:
-        - text: "IEEE TAFFC"
+        - text: "IEEE Transactions on Affective Computing"
       authors: "<strong>Yu Liu</strong>, Leyuan Qu, Hanlei Shi, Di Gao, Yuhua Zheng, Taihao Li"
       summary: >-
         Introduces GRACE for dynamic facial emotion recognition by aligning refined linguistic cues
