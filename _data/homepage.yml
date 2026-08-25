@@ -1,0 +1,194 @@
+# Content for the homepage (rendered by _layouts/homepage.html).
+# Everything on the landing page is driven from this file, so editing the site
+# normally means editing YAML here rather than touching HTML.
+
+nav:
+  - id: about
+    title: About
+  - id: news
+    title: News
+  - id: research
+    title: Research
+  - id: publications
+    title: Publications
+  - id: experience
+    title: Experience
+  - id: service
+    title: Service
+  - id: education
+    title: Education
+
+profile:
+  name: "Yu Liu"
+  position: "M.S. in Artificial Intelligence &middot; School of Intelligent Science and Technology, HIAS, UCAS"
+  avatar: "/images/yultheconkor_avatar.png"
+  paragraphs:
+    - >-
+      I am a final-year M.S. candidate in Artificial Intelligence at the
+      <a href="http://hias.ucas.ac.cn/znkxyjs/index.htm">School of Intelligent Science and Technology</a>,
+      <a href="http://hias.ucas.ac.cn/">Hangzhou Institute for Advanced Study (HIAS)</a>,
+      <a href="https://www.ucas.edu.cn/">University of Chinese Academy of Sciences (UCAS)</a>,
+      where I am very fortunate to be supervised by
+      <a href="https://people.ucas.ac.cn/~0070909">Prof. Taihao Li</a> and
+      <a href="https://people.ucas.edu.cn/~leyuanqu">Dr. Leyuan Qu</a>.
+    - >-
+      My research centers on <strong>multimodal affective computing</strong> and
+      <strong>long-lived, human-aware multimodal agents</strong> with a robust
+      perception &rarr; cognition &rarr; feedback loop. I also greatly enjoy collaborating with
+      <a href="https://wd-233.github.io/">Haoxun Li</a> and Hanlei Shi &mdash; I truly value our
+      inspirational discussions and seamless teamwork. If you are interested in collaborating,
+      feel free to reach out via email.
+  links:
+    - id: email
+      label: Email
+      url: "mailto:liuyu233@mails.ucas.ac.cn"
+    - id: github
+      label: GitHub
+      url: "https://github.com/YultheConkor"
+    - id: scholar
+      label: Google Scholar
+      url: "https://scholar.google.com/citations?user=Zgf_PJgAAAAJ&amp;hl=en"
+    - id: linkedin
+      label: LinkedIn
+      url: "https://www.linkedin.com/in/yu-liu-1b8004238/"
+    - id: cv
+      label: CV
+      url: "/assets/Yu_Liu_CV.pdf"
+
+news:
+  - date: "2026.03"
+    text: "HyDRA was available as a preprint on arXiv."
+  - date: "2026.01"
+    text: "Think-Before-Draw was accepted to Pattern Recognition."
+  - date: "2025.10"
+    text: "Centering Emotion Hotspots was available as a preprint on arXiv."
+  - date: "2025.08"
+    text: "HOPE was accepted to ACM MM 2025, and won 1st place in the MPDD Challenge Young Track."
+  - date: "2025.07"
+    text: "GRACE was available as a preprint on arXiv."
+  - date: "2023.09"
+    text: "Started my M.S. in Artificial Intelligence at HIAS, UCAS."
+
+research:
+  - title: "Multimodal Affective Computing"
+    text: >-
+      From frame-level facial dynamics to conversation-level tracking and open-vocabulary
+      emotional reasoning, following a Perception &rarr; Dialogue Understanding &rarr; Expression pipeline.
+  - title: "Human-aware Multimodal Agents"
+    text: >-
+      Cross-modal alignment, long-horizon memory and reasoning, multi-agent coordination,
+      and safe embodied interaction for agents that stay coherent over time.
+  - title: "Digital Therapeutics"
+    text: >-
+      Mental-health screening under privacy and low-resource constraints, combining visual
+      biomarkers with LLM-augmented questionnaire semantics.
+
+publications:
+  note: "* equal contribution"
+  items:
+    - title: "Follow the Clues, Frame the Truth: Hybrid-evidential Deductive Reasoning in Open-Vocabulary Multimodal Emotion Recognition"
+      badges:
+        - text: "Under Review"
+      authors: "<strong>Yu Liu</strong>, Lei Zhang, Haoxun Li, Hanlei Shi, Yuxuan Ding, Leyuan Qu, Taihao Li"
+      summary: >-
+        Formalizes emotion inference as a Propose&ndash;Verify&ndash;Decide protocol and uses reinforcement
+        learning with hierarchical reward shaping to internalize abductive reasoning, producing
+        interpretable evidence traces while outperforming strong baselines.
+      links:
+        - label: arXiv
+          url: "https://arxiv.org/abs/2603.16463"
+
+    - title: "Centering Emotion Hotspots: Multimodal Local-Global Fusion and Cross-Modal Alignment for Emotion Recognition in Conversations"
+      badges:
+        - text: "Under Review"
+      authors: "<strong>Yu Liu</strong>, Hanlei Shi, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
+      summary: >-
+        Extends frame-level recognition to conversation-level tracking by centering multimodal
+        hotspots and fusing them with dialogue context, improving stability and generalization across turns.
+      links:
+        - label: arXiv
+          url: "https://arxiv.org/abs/2510.08606"
+
+    - title: "From Coarse to Nuanced: Cross-Modal Alignment of Fine-Grained Linguistic Cues and Visual Salient Regions for Dynamic Emotion Recognition"
+      badges:
+        - text: "IEEE TAFFC"
+        - text: "Under Review"
+          soft: true
+      authors: "<strong>Yu Liu</strong>, Leyuan Qu, Hanlei Shi, Di Gao, Yuhua Zheng, Taihao Li"
+      summary: >-
+        Introduces GRACE for dynamic facial emotion recognition by aligning refined linguistic cues
+        with salient facial dynamics, achieving state of the art on DFEW, FERV39k and MAFW.
+      links:
+        - label: arXiv
+          url: "https://arxiv.org/abs/2507.11892"
+
+    - title: "HOPE: Hierarchical Fusion for Optimized and Personality-Aware Estimation of Depression"
+      badges:
+        - text: "ACM MM'25"
+        - text: "1st Place · MPDD"
+          soft: true
+      authors: "Hanlei Shi*, <strong>Yu Liu*</strong>, Haoxun Li, Yuqing Sun, Yuxuan Ding, Linlin Gong, Leyuan Qu, Taihao Li"
+      summary: >-
+        Subject-level depression detection under privacy constraints via hierarchical audio&ndash;video
+        fusion with personalized textual cues and cross-task consistency.
+      links:
+        - label: Paper
+          url: "https://doi.org/10.1145/3746027.3762063"
+
+    - title: "Think-Before-Draw: Decomposing Emotion Semantics & Fine-Grained Controllable Expressive Talking Head Generation"
+      badges:
+        - text: "Pattern Recognition"
+      authors: "Hanlei Shi, Leyuan Qu, <strong>Yu Liu</strong>, Di Gao, Yuhua Zheng, Taihao Li"
+      summary: >-
+        A two-stage framework for disentangled, controllable talking-head synthesis; I designed the
+        multimodal fusion module that preserves identity while sharpening affect control.
+      links:
+        - label: Paper
+          url: "https://www.sciencedirect.com/science/article/abs/pii/S0031320326005595"
+        - label: arXiv
+          url: "https://arxiv.org/abs/2507.12761"
+
+    - title: "Flight Operation Risk Propagation Based on Complex Network"
+      badges:
+        - text: "J. Transp. Sys. Eng."
+        - text: "F5000 Top Article"
+          soft: true
+      authors: "<strong>Yu Liu</strong>, et al."
+      summary: >-
+        Brings Spearman correlation and SIR dynamics into airline operational risk management,
+        yielding a deployable complex-network propagation analysis.
+      links:
+        - label: Paper
+          url: "http://www.tseit.org.cn/CN/Y2020/V20/I1/198"
+
+experience:
+  - org: "China Southern Airlines"
+    role: "Data Analyst, Airlines Operations Center"
+    period: "2019.09 - 2023.05"
+    points:
+      - >-
+        Built Python/MySQL analytics and monitoring, and automated Tableau/QuickBI reporting,
+        reducing manual report time by <strong>over 70%</strong> and enabling shared data services across departments.
+      - >-
+        Led a Django + SQL delay/fault analytics platform, cutting report generation time by
+        <strong>roughly 85%</strong> in support of operational safety and decision-making.
+  - org: "Hangzhou Institute for Advanced Study, UCAS"
+    role: "Lab Coordinator & Administrator"
+    period: "2024.09 - Present"
+    points:
+      - >-
+        Manage onboarding, event organization and <strong>GPU resource</strong> scheduling; oversee equipment
+        procurement and reimbursement workflows to keep projects moving.
+
+service:
+  - "<strong>Journal Reviewer</strong> for <em>Pattern Recognition</em> (Elsevier), 2025 - present."
+
+education:
+  - school: "University of Chinese Academy of Sciences"
+    degree: "M.S. in Artificial Intelligence, Hangzhou Institute for Advanced Study (GPA 3.76/4.00)"
+    period: "2023.09 - 2026.06"
+  - school: "Civil Aviation University of China"
+    degree: "B.S. in Transportation (GPA 3.36/4.00)"
+    period: "2015.09 - 2019.06"
+
+footer: "Last updated at 2026.08.25 &middot; Thanks for coming!"

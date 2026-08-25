@@ -1,0 +1,181 @@
+{% include base_path %}
+{% assign hp = site.data.homepage %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+    {% include head/custom.html %}
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/homepage.css">
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <div class="nav-inner">
+        <a class="nav-name" href="#about">{{ hp.profile.name }}</a>
+        <div class="nav-links" aria-label="Primary navigation">
+          {% for item in hp.nav %}<a href="#{{ item.id }}">{{ item.title }}</a>{% endfor %}
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="about" class="section section-first">
+        <div class="container">
+          <div class="about-card">
+            <aside class="profile-column">
+              <img class="avatar" src="{{ base_path }}{{ hp.profile.avatar }}" alt="{{ hp.profile.name }}">
+              <div class="social-links" aria-label="Social links">
+                {% for link in hp.profile.links %}
+                <a class="{{ link.id }}-link"
+                   href="{% if link.id == 'cv' %}{{ base_path }}{% endif %}{{ link.url }}"
+                   aria-label="{{ link.label }}" title="{{ link.label }}"
+                   {% unless link.id == 'email' %}target="_blank" rel="noopener"{% endunless %}>
+                  {% case link.id %}
+                  {% when 'email' %}
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 6h14.4c.99 0 1.8.81 1.8 1.8v8.4c0 .99-.81 1.8-1.8 1.8H4.8A1.8 1.8 0 0 1 3 16.2V7.8C3 6.81 3.81 6 4.8 6Zm.55 2 6.65 4.66L18.65 8H5.35Zm13.65 8V9.95l-6.48 4.54a.9.9 0 0 1-1.04 0L5 9.95V16h14Z"/></svg>
+                  {% when 'github' %}
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.75-.24.75-.53v-1.86c-3.06.67-3.7-1.32-3.7-1.32-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.57 1.19 3.19.91.1-.71.38-1.19.69-1.47-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.91 0 0 .92-.3 3.02 1.12a10.45 10.45 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.51.22 2.63.11 2.91.7.77 1.13 1.75 1.13 2.95 0 4.22-2.57 5.15-5.02 5.42.39.34.74 1.01.74 2.04V22c0 .29.2.64.76.53A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                  {% when 'scholar' %}
+                  <i class="ai ai-google-scholar" aria-hidden="true"></i>
+                  {% when 'linkedin' %}
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.25h4v11.25H3V9.25Zm6.5 0h3.83v1.54h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12v5.67h-4v-5.03c0-1.2-.02-2.74-1.67-2.74-1.67 0-1.93 1.31-1.93 2.66v5.11h-4V9.25Z"/></svg>
+                  {% when 'cv' %}
+                  CV
+                  {% endcase %}
+                </a>
+                {% endfor %}
+              </div>
+            </aside>
+
+            <div class="about-content">
+              <h1>{{ hp.profile.name }}</h1>
+              <p class="position">{{ hp.profile.position }}</p>
+              {% for paragraph in hp.profile.paragraphs %}
+              <p>{{ paragraph }}</p>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="section">
+        <div class="container">
+          <h2 class="section-title">News</h2>
+          <div class="simple-card">
+            <ul class="news-list">
+              {% for item in hp.news %}
+              <li><span>{{ item.date }}</span> {{ item.text }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <div class="container">
+          <h2 class="section-title">Research Interests</h2>
+          <div class="research-list">
+            {% for item in hp.research %}
+            <div class="research-item">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.text }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="container">
+          <h2 class="section-title">Publications <span class="title-note">(Selected)</span></h2>
+          {% if hp.publications.note %}<p class="publication-note">{{ hp.publications.note }}</p>{% endif %}
+          <div class="publication-list">
+            {% for paper in hp.publications.items %}
+            <article class="publication-card">
+              <div class="publication-body">
+                <div class="title-row">
+                  <h3>{{ paper.title }}</h3>
+                  {% for badge in paper.badges %}
+                  <span class="venue-badge{% if badge.soft %} badge-soft{% endif %}">{{ badge.text }}</span>
+                  {% endfor %}
+                </div>
+                <p>{{ paper.authors }}</p>
+                {% if paper.summary %}<p class="publication-summary">{{ paper.summary }}</p>{% endif %}
+                {% if paper.links %}
+                <div class="paper-links">
+                  {% for link in paper.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                  {% endfor %}
+                </div>
+                {% endif %}
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="simple-card">
+            <div class="experience-list">
+              {% for job in hp.experience %}
+              <div class="experience-item">
+                <div class="experience-head">
+                  <strong>{{ job.org }}</strong>
+                  <span>{{ job.period }}</span>
+                </div>
+                <p class="experience-role">{{ job.role }}</p>
+                <ul>
+                  {% for point in job.points %}<li>{{ point }}</li>{% endfor %}
+                </ul>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="section">
+        <div class="container">
+          <h2 class="section-title">Academic Service</h2>
+          <div class="simple-card">
+            <ul class="service-list">
+              {% for item in hp.service %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="simple-card">
+            <ul class="education-list">
+              {% for item in hp.education %}
+              <li>
+                <div>
+                  <strong>{{ item.school }}</strong>
+                  <p>{{ item.degree }}</p>
+                </div>
+                <span>{{ item.period }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>{{ hp.footer }}</p>
+    </footer>
+
+    <script src="{{ base_path }}/assets/js/homepage.js"></script>
+    {% include analytics.html %}
+  </body>
+</html>
