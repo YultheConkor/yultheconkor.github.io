@@ -17,6 +17,8 @@ nav:
     title: Service
   - id: education
     title: Education
+  - id: acknowledgements
+    title: Acknowledgements
 
 profile:
   name: "Yu Liu"
@@ -28,15 +30,12 @@ profile:
       <a href="http://hias.ucas.ac.cn/znkxyjs/index.htm">School of Intelligent Science and Technology</a>,
       <a href="http://hias.ucas.ac.cn/">Hangzhou Institute for Advanced Study (HIAS)</a>,
       <a href="https://www.ucas.edu.cn/">University of Chinese Academy of Sciences (UCAS)</a>,
-      where I am very fortunate to be supervised by
-      <a href="https://people.ucas.ac.cn/~0070909">Prof. Taihao Li</a> and
+      advised by <a href="https://people.ucas.ac.cn/~0070909">Prof. Taihao Li</a> and
       <a href="https://people.ucas.edu.cn/~leyuanqu">Dr. Leyuan Qu</a>.
     - >-
       My research centers on <strong>multimodal affective computing</strong> and
       <strong>long-lived, human-aware multimodal agents</strong> with a robust
-      perception &rarr; cognition &rarr; feedback loop. I also greatly enjoy collaborating with
-      <a href="https://wd-233.github.io/">Haoxun Li</a> and Hanlei Shi &mdash; I truly value our
-      inspirational discussions and seamless teamwork. If you are interested in collaborating,
+      perception &rarr; cognition &rarr; feedback loop. If you are interested in collaborating,
       feel free to reach out via email.
   links:
     - id: email
@@ -190,5 +189,16 @@ education:
   - school: "Civil Aviation University of China"
     degree: "B.S. in Transportation (GPA 3.36/4.00)"
     period: "2015.09 - 2019.06"
+
+acknowledgements:
+  - >-
+    I am very fortunate to be supervised by
+    <a href="https://people.ucas.ac.cn/~0070909">Prof. Taihao Li</a> and
+    <a href="https://people.ucas.edu.cn/~leyuanqu">Dr. Leyuan Qu</a>, whose guidance has shaped
+    how I think about research.
+  - >-
+    I also greatly enjoy collaborating with
+    <a href="https://wd-233.github.io/">Haoxun Li</a> and Hanlei Shi &mdash; I truly value our
+    inspirational discussions and seamless teamwork.
 
 footer: "Last updated at 2026.08.25 &middot; Thanks for coming!"

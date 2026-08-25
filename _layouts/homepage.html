@@ -169,6 +169,17 @@
           </div>
         </div>
       </section>
+
+      <section id="acknowledgements" class="section">
+        <div class="container">
+          <h2 class="section-title">Acknowledgements</h2>
+          <div class="simple-card acknowledgements">
+            {% for item in hp.acknowledgements %}
+            <p>{{ item }}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">

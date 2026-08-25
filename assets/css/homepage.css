@@ -335,13 +335,15 @@ main {
   font-weight: 700;
 }
 
-.about-content a {
+.about-content a,
+.acknowledgements a {
   color: var(--primary);
   text-decoration-color: rgba(24, 24, 27, 0.28);
   text-decoration-thickness: 1px;
 }
 
 .about-content a:hover,
+.acknowledgements a:hover,
 .paper-links a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -656,6 +658,18 @@ main {
 
 .experience-item li + li {
   margin-top: 4px;
+}
+
+/* ---------- Acknowledgements ---------- */
+
+.acknowledgements p {
+  margin: 0;
+  color: #27272a;
+  font-size: 14px;
+}
+
+.acknowledgements p + p {
+  margin-top: 10px;
 }
 
 /* ---------- Footer ---------- */
